@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './index.css';
 
-const API_BASE = 'http://localhost:8000/api';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
 function App() {
   const [activeTab, setActiveTab] = useState('research');
